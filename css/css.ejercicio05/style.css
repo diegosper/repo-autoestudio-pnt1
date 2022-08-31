@@ -1,0 +1,13 @@
+.circulo{
+    height: 300px;
+    width: 300px;
+    background-color: crimson;
+    border-radius: 50%;
+}
+
+.cuadrado{
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    border-radius: 10%;
+}
