@@ -1,0 +1,25 @@
+.container{
+    overflow-y: scroll;
+    width: 50vw;
+    height: 50vh;
+    
+}
+
+.div-footer{
+    
+    position: sticky;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 10vh;
+    font-weight: bold;
+    background-color: dimgrey;
+
+}
+
+
+.div-lorem{
+    border: solid 1px grey;
+}
