@@ -1,0 +1,16 @@
+.row-even{
+    background-color: palegoldenrod;
+}
+
+.row-odd{
+    background-color: chocolate;
+}
+
+.row-head{
+    background-color: royalblue;
+    color: white;
+}
+
+table{
+    border: solid 1px black;
+}
