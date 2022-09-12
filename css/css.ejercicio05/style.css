@@ -3,11 +3,10 @@
     width: 300px;
     background-color: crimson;
     border-radius: 50%;
+    transition: ease 1s;
 }
 
-.cuadrado{
-    height: 300px;
-    width: 300px;
+.circulo:hover{
     background-color: green;
     border-radius: 10%;
 }
