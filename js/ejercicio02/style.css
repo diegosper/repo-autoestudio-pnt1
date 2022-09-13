@@ -1,10 +1,42 @@
 .container{
     display: flex;
     flex-direction: column;
-    width: fit-content;
-
+    width: auto;
 }
 
 .botones{
     margin-bottom: 1%;
+}
+
+.box{
+    text-align: justify;
+}
+.row-even{
+    background-color: palegoldenrod;
+}
+
+.row-odd{
+    background-color: chocolate;
+}
+
+.row-head{
+    background-color: royalblue;
+    color: white;
+}
+
+table{
+    border: solid 1px black;
+    margin-bottom: 2vw;
+}
+
+td, th{
+    border: solid 1px;
+    width: 50%;
+    
+}
+
+#botonAgregarFila{
+    margin-top: -1%;
+    margin-bottom: 5%;
+    width: fit-content;
 }

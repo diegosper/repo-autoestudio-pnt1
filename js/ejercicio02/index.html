@@ -10,14 +10,38 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 
+<div class="container">
+
 <body>
     <h1>Javascript - PNT1</h1>
     <h2>Ejercicio 2 - tablas</h2>
     <p>No prestarle atención a los botones de abajo...</p>
 
+    <table id="tablaManipulada">
+        <thead>
+            <tr class="row-head">
+                <th>Materia</th>
+                <th>Turno</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr class="row-odd">
+                <td>NT1</td>
+                <td>Noche</td>
+            </tr>
+            <tr class="row-even">
+                <td>Programación 2</td>
+                <td>Noche</td>
+            </tr>
 
 
-    <div class="container">
+        </tbody>
+    </table>
+
+<button class="boton" id="botonAgregarFila" onclick="agregarFila('tableBody')">Agregar fila</button>
+
+    <p> <br> --------------------------------------------</p>
+
 
         <div class="botones">
             <button class="btn btn-info" onclick="asignarClase('alert')">Asignar clase alert</button>
