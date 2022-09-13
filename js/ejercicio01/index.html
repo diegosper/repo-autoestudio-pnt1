@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>Javascript - PNT1</h1>
+    <h2>Ejercicio 1</h2>
+    <div class="box" id="textColor" style="width: 50vw; border: solid 1px blue;">
+        Modificar a través de javascript el estilo de este texto cuando se presione el botón de abajo.
+        Cuando se presione el botón solicitar una confirmación al usuario para saber si éste se arrepiente del
+        cambio y
+        por lo tanto no se efectúa.
+        El texto debe quedar con la fuente "Comic Sans MS", tamaño 14px y rojo.
+    </div>
+
+    <button class="boton" id="botonModificar" onclick="modificarEstilos('red', '14px','Comic Sans MS')">Cambiar estilos</button>
+    <button class="boton" id="botonRestaurar" onclick="restaurarEstilos()">Volver al original (pendiente)</button>
+    <!-- HACER DOS CLASES EN CSS: UNA CON EL ESTILO ORIGINAL Y OTRO CON EL CAMBIADO -->
+    <script src="main.js"></script>
+</body>
+
+</html>
