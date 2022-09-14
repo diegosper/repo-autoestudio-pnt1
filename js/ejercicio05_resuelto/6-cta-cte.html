@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset=utf-8 />
+
+    <title>JS ejercicio 6</title>
+
+    <!-- <link rel="stylesheet" href="../../resources/css/bootstrap.min.css" /> -->
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="6-cta-cte.css">
+</head>
+
+<body>
+    <div class="alert alert-info">
+        Hacer que se pueda depositar dinero y extraer dinero.
+        <br />
+        La operación de extracción debe dejar un asiento en la columna monto que indique el monto en negativo y con
+        color rojo (puede utilizar la clase de bootstrap text-danger).
+        <br />
+        La operación de depósito debe dejar un asiento en la columna monto que indique el monto positivo y con
+        color verde (puede utilizar la clase de bootstrap text-success).
+        <br />
+        En cualquiera de los casos anteriores debe actualizar el balance total y el banlance parcial indicando el monto
+        disponible en la Cta. Cte.
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>Mi cuenta corriente</h1>
+        </header>
+        <div class="alert alert-warning">
+            Balance Total: <span>$00,00</span>
+        </div>
+        <div>
+            <!-- El return False, es para evitar que se recarge la pagina en este caso-->
+            <form class="form-inline" onSubmit="return false;">
+                <label>Operacion:</label>
+                <select id='operacion' class="form-control">
+                    <!-- acá se auto popularan las opciones -->
+                </select>
+                <!-- La Fecha, se populará automaticamente con el día de hoy. -->
+                <label>Fecha:</label><input type='date' id='inputFecha' class="form-control" />
+
+                <!-- Step es para demarcar de cuanto en cuanto se incrementa o decrementa -->
+                <label>Monto:</label><input type='number' id='inputMonto' step="0.05" placeholder="0"
+                    class="form-control" />
+
+                <button type="submit" class="btn btn-outline-info form-control" onclick='ejecutarOperacion()'>Realizar
+                    Operacion</button>
+            </form>
+        </div>
+        <hr>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Fecha de movimiento</th>
+                        <th>Monto</th>
+                        <th>Balance parcial</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10/01/2020</td>
+                        <td class="text-success">$100,00</td>
+                        <td>$100,00</td>
+                    </tr>
+                    <tr>
+                        <td>22/01/2020</td>
+                        <td class="text-danger">$-45,00</td>
+                        <td>$55,35</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <div id="miModal" class="modal fade " role="dialog" aria-labelledby="miModalLabel" >
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="miModalTitulo">Advertencia</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="6-cta-cte.js"></script>
+</body>
+
+</html>
