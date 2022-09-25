@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div class="box">
+        <p>El evento "keyup" del cuadro de texto para indicar si coincide o no con el texto que figura en el span
+            de arriba.</p>
+        <p>Si el texto coincide, poner en el span de abajo en verde "coincide", si el texto ingresado no coindide,
+            entonces
+            poner en el span de abajo en rojo "no coincide"</p>
+    </div>
+
+    <div class="box">
+        <span id="captcha">eSt0 p0dr1A s3R uN cAptchA</span>
+        <input type="text" class="form-control" id="inputTexto" placeholder="ingresar el texto de arriba">
+        <span id="resultado" class="form-text"></span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
